@@ -1,0 +1,341 @@
+
+table {
+    margin: 0 auto;
+    text-align: center;
+}
+
+div#hours{
+    margin: 20px auto 0;
+    width: 700px;
+}
+
+div#hours p{
+    display: inline-block;
+    cursor: pointer;
+    padding: 5px 10px;
+    transition: all .1s linear;
+    border: 2px solid transparent;
+
+}
+
+div#hours p:hover{
+    color:white;
+}
+
+div#hours p.active{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.31);
+}
+
+div#hours p:hover{
+
+}
+
+div#table_container{
+    width: 100%;
+    height: 210px;
+    overflow: hidden;
+    margin: 0 auto 50px;
+    background: url("../images/pattern.jpg");
+}
+
+
+table#summer_hours, table#winter_hours {
+    display: block;
+    width: 450px;
+    height: 210px;
+    margin:0 auto;
+    transition: margin .5s;
+    vertical-align: middle;
+}
+
+
+#table_container h2{
+    font-family: open-sans-light;
+    font-size:40px;
+    padding: 5px 0;
+    color: salmon;
+}
+
+#table_container h2 span{
+    font-family: open-sans-bold;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+
+#summer_hours h2 span, #winter_hours h1 {
+    font-size:40px;
+    padding: 5px 0;
+}
+
+
+table#summer_hours td, table#winter_hours td {
+    padding: 5px;
+    font-size: 15px;
+    text-align: left;
+    color: #ffffff;
+}
+
+#summer_hours td:nth-of-type(odd), #winter_hours td:nth-of-type(odd){
+    color: salmon;
+}
+
+div#top-add{
+    position: relative;
+    width: 100%;
+}
+
+p#main_ad{
+    width: 500px;
+    margin-left: 20px;
+    font-family: abel;
+    font-size:50px;
+    font-weight: bold;
+    color: salmon;
+    letter-spacing: -2px;
+    text-align: left;
+}
+
+p#main_ad span{
+    display: block;
+    font-size: 15px;
+    color: gray;
+    font-weight: normal;
+    letter-spacing: 0;
+    margin-top: -12px;
+}
+
+#top-add #order-button{
+    background: linear-gradient(rgba(250, 128, 114, 0.92) 50%, #cb6661 100%);
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 20px;
+    position: absolute;
+    top: 80px;
+    right: 50px;
+}
+
+#order-button a{
+    display: block;
+    color: white;
+    background: linear-gradient(rgba(250, 128, 114, 0.92) 50%, #cb6661 100%);
+    padding-top: 10px;
+    width: 150px;
+    height: 40px;
+}
+
+#order-button a:hover {
+    background: url("../images/patter2.jpg");
+}
+
+div.map{
+    position: relative;
+    width: 950px;
+    height:400px;
+    margin: 20px auto;
+}
+
+div.map iframe{
+    width:100%;
+    height:400px;
+    z-index: 98;
+
+}
+
+a#click_here{
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+    font-size: 20px;
+    color:white;
+    z-index: 99;
+    padding: 10px 0;
+    background: linear-gradient(rgba(250, 128, 114, 0.92) 50%, #cb6661 100%);
+    transition: all .3s;
+}
+
+a#click_here:hover{
+    background: url("../images/patter2.jpg");
+}
+
+table#c_cards {
+    padding-left: 0;
+    width: 240px;
+}
+
+table#c_cards tr td {padding-top:10px}
+
+div#banner_wrapper{
+    /*background-color: rgba(255, 255, 255, 0.51);*/
+    background: url("../images/pattern.jpg");
+    width: 100%;
+    margin: 20px auto;
+    height: 340px;
+}
+
+div#banner_wrapper div{
+    width: 30%;
+    height: 340px;
+    margin: 0 5px;
+    display: inline-block;
+}
+
+div#banner_wrapper p    {
+    font-family: bebas-neue;
+    text-align: center;
+    font-size: 70px;
+    color: salmon;
+    width: 100%;
+    cursor: pointer;
+}
+
+div#banner_wrapper div div.banner_img{
+    position: relative;
+    width: 280px;
+    height: 190px;
+    margin: auto;
+}
+
+#banner_wrapper table{
+    font-family: oswald;
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    background: url("../images/pattern.jpg");
+    transition: all .5s ease-in-out;
+    text-align: center;
+}
+
+#banner_wrapper table td span.menu_item{
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
+
+#banner_wrapper table tr{
+    display: block;
+    width: 280px;
+    text-align: center;
+}
+
+#banner_wrapper table td{
+    display: block;
+    width: 100%;
+    color: lightsalmon;
+}
+
+
+div#banner_img1{
+    background:url("../images/sml_pizza.jpg") no-repeat;
+}
+
+div#banner_img2{
+    background:url("../images/sml_wings.jpg") no-repeat;
+}
+
+div#banner_img3{
+    background:url("../images/sml_entre.jpg") no-repeat;
+}
+
+#banner_wrapper tr:first-of-type td{
+    margin-top: 20px;
+}
+
+#table3 tr:first-of-type td{
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 1092px) {
+
+    div#banner_wrapper p    {
+        font-size: 70px;
+    }
+
+    div.map{
+        width: 90%;
+    }
+
+}
+
+
+
+/*
+
+#banner1 table {
+background:url(../images/sml_pizza.jpg);
+    background-size: contain;
+}
+
+#banner2 table {
+background:url(../images/sml_wings.jpg);
+background-size: contain;
+}
+
+#banner3 table {
+background:url(../images/sml_entre.jpg);
+background-size: contain;
+}*/
+
+
+
+/* Mobile styling 480px*/
+/*
+@media screen and (max-width: 667px) {
+
+    div#pizzashop_wrapper{
+        width:100%;
+        height:250px;
+        margin:0;
+        background-size:cover;
+    }
+
+
+    p#pizzashop_wrapper_writing{
+        display: table-cell;
+        letter-spacing: 0;
+        font-size:27px;
+        color:#aa0000;
+        background-color: rgba(126, 126, 126, 0.63);
+    }
+
+    div.map iframe {
+        width:100%;
+        height:300px
+    }
+
+    span#minium_txt{
+        font-size:25px;
+    }
+
+    p#click_here{
+        font-size:13px;
+        -webkit-text-size-adjust: none;
+    }
+
+    div#mobile_address {
+        display: inline;
+        text-align: center;
+        margin-bottom: 15px;
+        -webkit-text-size-adjust: none;
+    }
+
+    div#mobile_address{
+        font-size:15px;
+    }
+
+    table {
+        font-size:13px;
+        width:95%;
+        margin-left: auto;
+        margin-right: auto;}
+
+    table#summer_hours td, table#winter_hours td {font-size:12px}
+
+}*/
+

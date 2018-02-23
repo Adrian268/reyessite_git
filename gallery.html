@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title> Reye's NY Pizza - Belmar </title>
+    <meta name="Keywords" content="Pizza, Belmar, NJ, New Jersey, New York Style Pizza, Reye's Pizza"/>
+    <meta name="Description" content="Reye's NY style pizza, Belmar Pizza, Belmar NJ, New Jersey Pizza"/>
+    <link href="css/main.css" type="text/css" rel="stylesheet"/>
+    <link href="css/gallery.css" type="text/css" rel="stylesheet"/>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/png"/>
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0"/>-->
+    <!--<script src="js/handle_nav.js" type="text/javascript"></script>        ** MOBILE MENU **-->
+    <!-- jQuery library (served from Google) -->
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <!-- bxSlider Javascript file -->
+    <script src="js/jquery.bxslider.js"></script>
+    <!-- bxSlider CSS file -->
+    <link href="js/jquery.bxslider.css" rel="stylesheet" />
+</head>
+
+<body>
+<script type="text/javascript">
+    $(document).ready(function(){ $('.bxslider').bxSlider(); });
+</script>
+
+<header>
+    <div id="logo_container">
+        <div id="address">1617 MAIN STREET <br/>LAKE COMO, NJ 07719 <br/><br/><a href="tel:7322806990" id="phone-number">732-280-6990</a></div>
+        <img src="images/reyes_logo.png" border="0" alt="" id="reyes_logo"/>
+    </div>
+
+    <ul id="main_nav">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="menu.html">MENU</a></li>
+        <li><a href="catering.html">CATERING</a></li>
+        <li   class="active" ><a href="gallery.html">GALLERY</a></li>
+    </ul>
+</header>
+
+<!-- Top Menu Navigation -->
+<div id="mobile_nav_icon" onclick="handleMenu();"> <img src="images/menuicon_mobile.png" width="25px" height="18px" alt=""/></div>
+
+
+
+<ul class="bxslider">
+    <li id="slider_one"><div><p>WELCOME<br/>TO<BR/>REYE'S PIZZA</p></div></li>
+    <li id="slider_two"><div><p>ITALIAN SPECIALTIES</p></div></li>
+    <li id="slider_three"><div><p>FRESH BREAD</p></div></li>
+    <li id="slider_four"><div><p>WINGS</p></div></li>
+</ul>
+
+<!-- Start Main Body -->
+<div id="main_body">
+
+
+
+</div> <!-- end main body -->
+
+<div id="footer"><p id="copyright">Reye's Pizza <span>&copy;2015</span></p>
+    <table id="c_cards" cellpadding="0">
+        <tr >
+            <td><img class="cc_images" src="images/visa.png" alt=""/></td>
+            <td><img class="cc_images" src="images/mastercard.png"  alt=""/></td>
+            <td><img class="cc_images" src="images/discover.png" alt=""/></td>
+        </tr>
+    </table>
+</div>
+
+</body>
+
+</html>
+

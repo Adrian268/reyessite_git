@@ -1,0 +1,439 @@
+
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title> Reye's NY Pizza - Belmar</title>
+        <meta name="Keywords" content="Pizza, Belmar, NJ, New Jersey, New York Style Pizza, Reye's Pizza"/>
+        <meta name="Description" content="Reye's NY style pizza, Belmar Pizza, Belmar NJ, New Jersey Pizza"/>
+        <link href="css/main.css" type="text/css" rel="stylesheet"/>
+        <link href="css/menu.css" type="text/css" rel="stylesheet"/>
+        <link rel="shortcut icon" href="images/favicon.png" type="image/png"/>
+        <!--<meta name="viewport" content="width=device-width, initial-scale=1.0"/>-->
+
+        <!-- jQuery library (served from Google) -->
+        <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+        <!-- bxSlider Javascript file -->
+        <script src="js/jquery.bxslider.js"></script>
+        <!-- bxSlider CSS file -->
+        <link href="js/jquery.bxslider.css" rel="stylesheet" />
+        <script src="js/smoothscroll.js"></script>
+
+        <!--<script src="js/handle_nav.js" type="text/javascript"></script>        ** MOBILE MENU **-->
+        <!--<script src="js/menu.js"></script>-->
+    </head>
+
+<body>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('.bxslider').bxSlider();
+
+        var tables = [
+            "salads",
+            "apps",
+            "cold_subs",
+            "hot_subs",
+            "cheese_steaks",
+            "burgers",
+            "pizza",
+            "baked_dishes",
+            "pasta_dishes",
+            "entrees",
+            "calzone"
+        ];
+
+        var $image_wrapper;
+
+        for(var x = 0 ; x <= tables.length ; x++){
+
+            $image_wrapper = $('div#image-wrapper-'+tables[x]);
+
+            setBgImg($image_wrapper, tables[x])
+        }
+
+        function setBgImg(div, table){
+
+            div.css({"background": 'url(images/'+table+'_img.jpg) no-repeat', "background-size": 'contain'});
+        }
+
+
+
+    });
+</script>
+
+
+
+<header>
+    <div id="logo_container">
+        <div id="address">1617 MAIN STREET <br/>LAKE COMO, NJ 07719 <br/><br/><a href="tel:7322806990" id="phone-number">732-280-6990</a></div>
+        <img src="images/reyes_logo.png" border="0" alt="" id="reyes_logo"/>
+    </div>
+
+    <ul id="main_nav">
+        <li><a href="index.html">HOME</a></li>
+        <li  class="active" ><a href="menu.html">MENU</a></li>
+        <li><a href="catering.html">CATERING</a></li>
+        <li><a href="gallery.html">GALLERY</a></li>
+    </ul>
+</header>
+
+<!-- Top Menu Navigation -->
+<div id="mobile_nav_icon" onclick="handleMenu();"> <img src="images/menuicon_mobile.png" width="25px" height="18px" alt=""/></div>
+
+
+<ul class="bxslider" id="bxslider">
+    <li id="slider_one"><div><p>WELCOME<br/>TO<BR/>REYE'S PIZZA</p></div></li>
+    <li id="slider_two"><div><p>ITALIAN SPECIALTIES</p></div></li>
+    <li id="slider_three"><div><p>FRESH BREAD</p></div></li>
+    <li id="slider_four"><div><p>WINGS</p></div></li>
+</ul>
+
+<div id="mobile_number"><a href="tel:7322806990">732-280-6990</a></div>
+
+
+<!-- Start Main Body -->
+<div id="main_body">
+
+	<h1 id="menu_label">MENU</h1>
+
+    <ul id="menu_selector">
+        <li rel="salads" onclick="autoScrollTo('salads'); return false;"> <a href="#">Salads</a></li> |
+        <li rel="soups" onclick="autoScrollTo('salads'); return false;"><a href="#">Soups</a></li> |
+        <li rel="apps" onclick="autoScrollTo('apps'); return false;"><a href="#">Appetizers</a></li> |
+        <li rel="cold_subs" onclick="autoScrollTo('cold_subs'); return false;"><a href="#">Cold Subs</a></li> |
+        <li rel="hot_subs" onclick="autoScrollTo('cold_subs'); return false;"><a href="#">Hot Subs</a></li> |
+        <li rel="cheese_steaks" onclick="autoScrollTo('cheese_steaks'); return false;"><a href="#">Cheese Steaks</a></li> |
+        <li rel="wraps" onclick="autoScrollTo('wraps'); return false;"><a href="#">Wraps</a></li> |
+        <li rel="burgers" onclick="autoScrollTo('wraps'); return false;"><a href="#">Hamburgers</a></li> |
+        <li rel="pizza" onclick="autoScrollTo('pizza'); return false;"><a href="#" >Pizza</a></li> |
+        <li rel="baked_dishes" onclick="autoScrollTo('baked_dishes'); return false;"><a href="#">Baked Dishes</a></li> |
+        <li rel="pasta_dishes" onclick="autoScrollTo('pasta_dishes'); return false;"><a href="#">Pasta Dishes</a></li>
+        <li rel="specialpasta_dishes" onclick="autoScrollTo('pasta_dishes'); return false;"><a href="#">Special Pasta Dishes</a></li> |
+        <li rel="entrees" onclick="autoScrollTo('entrees'); return false;"><a href="#">Entrees</a></li> |
+        <li rel="seafood_entre" onclick="autoScrollTo('entrees'); return false;"><a href="#">Seafood Entrees</a></li> |
+        <li rel="calzone" onclick="autoScrollTo('calzone'); return false;"><a href="#">Calzone, Strombollis, & Rolls</a></li> |
+        <li rel="others" onclick="autoScrollTo('calzone'); return false;"><a href="#">Others</a></li>
+    </ul>
+
+
+<div id="table_menu_wrapper">
+    <div class="menu_tables active" id="salads" >
+
+        <div class="table-wrapper">
+            <h1>Salads</h1>
+            <div><h4>Small - Large</h4></div>
+            <div id="salads_table" class="menu-option">
+                <p><span class="menuItem">Garden Salad</span> $3.99 - $4.99</p>
+                <p><span class="menuItem">Cheese Salad</span> $4.99 - $5.99 </p>
+                <p><span class="menuItem">Caesar Salad</span> $4.99 - $5.99</p>
+                <p><span class="menuItem">Chicken Caesar Salad</span> $5.99 - $6.99</p>
+                <p><span class="menuItem">Grilled Chicken Salad</span> $5.99 - $6.99</p>
+                <p><span class="menuItem">Antipasto Salad</span> $5.99 - $6.99</p>
+                <p><span class="menuItem">Tomato Mozzarella Salad</span> $5.99 - $6.99</p>
+                <p><span class="menuItem">Tuna Salad</span> $5.99 - $6.99</p>
+            </div>
+        </div>
+
+        <div class="table-wrapper" id="soups">
+            <h1>Soups</h1>
+            <div id="soups_table" class="menu-option">
+                <p><span class="menuItem">Chicken Noodle</span> $3.00</p>
+                <p><span class="menuItem">Pasta Fagioli</span> $3.00</p>
+                <p><span class="menuItem">Minestrone</span> $3.00</p>
+            </div>
+        </div> <!-- end soups table -->
+
+        <div class="image-wrapper" id="image-wrapper-salads"></div>
+
+    </div> <!-- end salad table -->
+
+
+    <div class="menu_tables" id="apps">
+        <div class="table-wrapper wrapper-100">
+            <div id="apps_table" class="menu-option">
+                <h1>Appetizers</h1>
+                <div><h4>Small - Large</h4></div>
+                <div class="menu-sections">
+                    <p><span class="menuItem">Buffalo Wings</span> (6)(12) $3.99 - $7.99</p>
+                    <p><span class="menuItem">Garlic Knots</span> (6)(12) $2.99 - $3.99</p>
+                    <p><span class="menuItem">Meatball-Side</span> (3) $3.99</p>
+                    <p><span class="menuItem">Sausage-Side</span> (3) $3.99</p>
+                    <p><span class="menuItem">Garlic Bread</span> $2.99 - $3.99</p>
+                    <p><span class="menuItem">Garlic Bread w/Cheese</span> $3.99 - $4.99</p>
+                    <p><span class="menuItem">Mozzarella Sticks</span> $5.99</p>
+                </div>
+                <div class="menu-sections">
+                    <p><span class="menuItem">Chicken Fingers w/Fries</span> $5.99</p>
+                    <p><span class="menuItem">Mussels Marinara</span> $8.99</p>
+                    <p><span class="menuItem">Fries</span> $2.50</p>
+                    <p><span class="menuItem">Pizza Fries</span> $3.99</p>
+                    <p><span class="menuItem">Fries w/Cheese</span> $3.99</p>
+                    <p><span class="menuItem">Fried Calamari</span> $7.99</p>
+                    <p>&nbsp;</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="image-wrapper" id="image-wrapper-apps"></div>
+    </div> <!-- end apps table -->
+
+
+    <div class="menu_tables wrapper-100" id="cold_subs">
+        <div class="table-wrapper">
+            <h1>Cold Subs</h1>
+            <div>
+                <small>served w/lettuce, tomatoes, onions, oil & vinegar</small>
+                <h4>Small - Large</h4>
+            </div>
+            <div id="cold_subs_table" class="menu-option">
+                <p><span class="menuItem">Ham</span> $4.99 - $6.00</p>
+                <p><span class="menuItem">Ham & Cheese</span> $5.25 - $6.75</p>
+                <p><span class="menuItem">Turkey</span> $5.25 - $6.75</p>
+                <p><span class="menuItem">Turkey & Cheese</span> $5.50 - $7.25</p>
+                <p><span class="menuItem">Tuna</span> $5.50 - $7.25</p>
+                <p><span class="menuItem">Italian Sub</span><span class="small-txt"> ham, salami, provolone </span> $5.75 - $7.75</p>
+                <p><span class="menuItem">Special Sub</span><span class="small-txt"> ham, salami, provolone, capicola, pepperoni</span> $5.95 - $7.99</p>
+                <p><span class="menuItem">Cheese Sub</span> $4.75 - $5.95</p>
+                <p><span class="menuItem">Grilled Chicken Sub</span> $5.99 - $7.99</p>
+                <p><span class="menuItem">Buffalo Chicken Sub</span> $5.99 - $7.99</p>
+                <p><span class="menuItem">Grilled Chicken Sub</span><span class="small-txt"> w/roasted peppers, fresh mozz & balsamic</span> $6.99 - $8.99</p>
+            </div>
+        </div>
+
+        <div class="table-wrapper" id="hot_subs">
+            <h1>Hot Subs</h1>
+            <div><h4>Small - Large</h4></div>
+            <div id="hot_subs_table" class="menu-option">
+                <p><span class="menuItem">Meatball</span> $4.95 - $6.75</p>
+                <p><span class="menuItem">Meatball Parmesan</span> $5.25 - $6.95</p>
+                <p><span class="menuItem">Sausage</span> $4.99 - $6.75</p>
+                <p><span class="menuItem">Sausage Parmesan</span> $5.25 - $6.95</p>
+                <p><span class="menuItem">Chicken Parmesan</span> $5.25 - $6.95</p>
+                <p><span class="menuItem">Sausage w/Peppers & Onions</span> $5.25 - $7.00</p>
+                <p><span class="menuItem">Chicken California</span> $5.95 - $7.99</p>
+                <p><span class="menuItem">Eggplant Parmesan</span> $5.25 -$6.99</p>
+                <p><span class="menuItem">Pepper & Egg</span> $4.00 - $5.75</p>
+                <p><span class="menuItem">Sausage, Pepper & Egg</span> $4.25 - $6.00</p>
+                <p><span class="menuItem">Shrimp Parmesan</span> $5.99 - $8.99</p>
+                <p><span class="menuItem">Italian Hot Dog</span> $4.99 - $6.50</p>
+                <p><span class="menuItem">Veal Parmesan</span> $6.95 - $8.95</p>
+                <p><span class="menuItem">Veal Onions & Pepper</span> $7.95 - $9.75</p>
+            </div>
+        </div>
+
+    </div> <!-- end cold subs table -->
+
+    <div class="image-wrapper" id="image-wrapper-cold_subs"></div>
+
+    <div class="menu_tables" id="cheese_steaks">
+        <div class="table-wrapper">
+            <h1>Cheese Steaks</h1>
+            <div><small>Beef or Chicken</small></div>
+            <div><h4>Small - Large</h4></div>
+            <div id="cheese_steaks_table" class="menu-option">
+                <p><span class="menuItem">Steak</span> $4.00 - $6.50</p>
+                <p><span class="menuItem">Cheese Steak</span> $4.95 - $6.95</p>
+                <p><span class="menuItem">Cheese Steak California</span> $5.95 - $7.99</p>
+                <p><span class="menuItem">Pizza Steak</span> $5.25 - $7.25</p>
+                <p><span class="menuItem">Special Cheese Steak</span> $5.95 - $7.95</p>
+                <p><span class="menuItem">Cheese Steak Mushrooms</span> $5.25 - $7.25</p>
+                <p><span class="menuItem">Cheese Steak Onions & Peppers</span> $5.75- $7.75</p>
+                <p><span class="menuItem">Italian Cheese Steak</span> $5.95 - $7.99</p>
+            </div>
+        </div>
+
+        <div class="image-wrapper" id="image-wrapper-cheese_steaks"></div>
+
+    </div> <! -- end cheese steak table -->
+
+
+    <div class="menu_tables" id="wraps" >
+        <div class="table-wrapper">
+            <h1>Wraps</h1>
+            <div id="wraps_table" class="menu-option">
+                <p><span class="menuItem">Chicken Parmesan</span> $5.99</p>
+                <p><span class="menuItem">Grilled Chicken</span> $5.99</p>
+                <p><span class="menuItem">Chicken Caesar</span> $5.99</p>
+                <p><span class="menuItem">Buffalo Chicken</span> 5.99</p>
+                <p><span class="menuItem">Tuna</span> $5.99</p>
+            </div>
+        </div>
+
+        <div class="table-wrapper" id="burgers">
+            <h1>Hamburgers</h1>
+            <div id="burgers_table" class="menu-option">
+                <p><span class="menuItem">Hamburger</span> $4.89</p>
+                <p><span class="menuItem">Cheese Burger</span> $4.99</p>
+                <p><span class="menuItem">California Burger</span> 5.99</p>
+                <p><span class="menuItem">Pizza Burger</span> $5.25</p>
+            </div>
+        </div>
+
+    </div> <!-- end wrap table -->
+
+    <div class="menu_tables" id="pizza">
+        <div class="table-wrapper wrapper-100">
+            <div id="pizza_table" class="menu-option">
+                <h1>Pizza</h1>
+                <div><small>ask for x-large pies starting at $13.50</small></div>
+                <div><h4>14" - 16"</h4></div>
+                <div class="menu-sections">
+                    <p><span class="menuItem">Plain</span> $9.00 - $11.00</p>
+                    <p><span class="menuItem">Buffalo Chicken</span> $12.99 - $14.99</p>
+                    <p><span class="menuItem">White Pie</span> $11.99 - $13.99</p>
+                    <p><span class="menuItem">White Spinach</span> $12.99 - $14.99</p>
+                    <p><span class="menuItem">White Broccoli</span> $12.99 - $14.99</p>
+                    <p><span class="menuItem">Meat Lover</span> $13.99 - $14.99</p>
+                    <p><span class="menuItem">Vegetable Pie</span> $13.99 - $14.99</p>
+                    <p><span class="menuItem">Special Pie</span> $13.99 - $14.99</p>
+                </div>
+                <div class="menu-sections">
+                    <p><span class="menuItem">Hawaiian</span> $12.99 - $13.99</p>
+                    <p><span class="menuItem">Sicilian</span> _____ - $14.99</p>
+                    <p><span class="menuItem">BBQ Chicken</span> $13.00 - $14.00</p>
+                    <p><span class="menuItem">Chicken Parmesan</span> $13.00 - $14.00</p>
+                    <p><span class="menuItem">Margarita</span> $13.99 - $14.99</p>
+                    <p><span class="menuItem">Cheese Steak Pie</span> $13.99 - $15.99</p>
+                    <p><span class="menuItem">White-Fresh Garlic, Tomato & Mozz</span>$12.99 - $13.95</p>
+                    <p>&nbsp;</p>
+                </div>
+            </div>
+
+            <table id="toppings">
+                <tr>
+                    <td><h5>Toppings</h5></td>
+                    <td><small>14" - $1.50</small></td>
+                    <td><small>16" - $2.00</small></td>
+                    <td><small>1/2 - $1.25</small></td>
+                </tr>
+                <tr>
+                    <td colspan="4">Sausage, Peppers, Onions, Olives, Pepperoni, Mushrooms, Meatballs, Broccoli, Ham, Pineapple, Spinach, Anchovies</td>
+                </tr>
+            </table>
+
+        </div>
+
+        <div class="image-wrapper" id="image-wrapper-pizza"></div>
+
+    </div> <!-- end pizza pies table -->
+
+
+    <div class="menu_tables" id="baked_dishes">
+        <div class="table-wrapper">
+            <h1>Baked Dishes</h1>
+            <div id="baked_dishes_table" class="menu-option">
+                <p><span class="menuItem">Stuffed Shells</span> $7.99</p>
+                <p><span class="menuItem">Manicotti</span> $7.99</p>
+                <p><span class="menuItem">Cheese Ravioli</span> $6.99</p>
+                <p><span class="menuItem">Baked Ziti</span> $7.99 </p>
+                <p><span class="menuItem">Lasagna</span> $8.99</p>
+            </div>
+        </div>
+
+        <div class="image-wrapper" id="image-wrapper-baked_dishes"></div>
+
+    </div> <!-- end baked dishes table -->
+
+
+    <div class="menu_tables wrapper-100" id="pasta_dishes">
+        <div class="table-wrapper">
+            <h1>Pasta Dishes</h1>
+            <div><small>served with salad & bread</small></div>
+            <div><small>choice of spaghetti, penne or linguini</small></div>
+            <div id="pasta_dishes_table" class="menu-option">
+                <p><span class="menuItem">Marinara</span> $6.99</p>
+                <p><span class="menuItem">Garlic & Oil</span> $6.99</p>
+                <p><span class="menuItem">Meatballs</span> $7.99</p>
+                <p><span class="menuItem">Meat Sauce</span> $7.99</p>
+                <p><span class="menuItem">Sausage</span> $7.99</p>
+                <p><span class="menuItem">Vegetables</span> $9.99</p>
+            </div>
+        </div>
+
+        <div class="table-wrapper" id="specialpasta_dishes">
+            <h1>Special Pasta Dishes</h1>
+            <div id="specialpasta_dishes_table" class="menu-option">
+                <p><span class="menuItem">Penne Vodka</span>
+                <p><span class="menuItem">Penne Primavera</span> $8.99</p>
+                <p><span class="menuItem">Fettucini Alfredo</span> $8.99</p>
+                <p><span class="menuItem">Cavatelli w/Broccoli</span> $9.99</p>
+            </div>
+        </div>
+
+    </div> <!-- end special pasta dishes -->
+
+
+    <div class="menu_tables wrapper-100" id="entrees">
+        <div class="table-wrapper">
+            <h1>Entrees</h1>
+            <div><small>served with choice of pasta & bread</small></div>
+            <div id="entrees_table" class="menu-option">
+                <p><span class="menuItem">Chicken Parmesan</span> $10.00</p>
+                <p><span class="menuItem">Eggplant Parmesan</span> $10.00</p>
+                <p><span class="menuItem">Veal Parmesan</span> $12.99</p>
+                <p><span class="menuItem">Shrimp Parmesan</span> $12.99</p>
+                <p><span class="menuItem">Eggplant Rollatini</span> $12.99</p>
+                <p><span class="menuItem">Chicken Francaise</span> $11.99</p>
+                <p><span class="menuItem">Chicken Marsala</span> $11.99</p>
+            </div>
+        </div>
+
+        <div class="table-wrapper" id="seafood_entre">
+            <h1>Seafood Entrees</h1>
+            <div id="seafood_entre_table" class="menu-option">
+                <p><span class="menuItem">Seafood Combo Over Pasta</span> $13.99</p>
+                <p><span class="menuItem">Mussels Marinara</span> $12.99</p>
+                <p><span class="menuItem">Linguini w/White or Red Clam Sauce</span> $9.99</p>
+                <p><span class="menuItem">Shrimp Marinara</span> $10.99</p>
+            </div>
+        </div>
+    </div> <!-- end pasta dishes -->
+
+
+    <div class="menu_tables" id="calzone">
+        <div class="table-wrapper">
+            <h1>Calzone Strombollis & Rolls</h1>
+            <div><small>toppings: small - $0.75 large - $1.25</small></div>
+            <div><h4>Small - Large</h4></div>
+            <div id="calzone_table" class="menu-option">
+                <p><span class="menuItem">Calzone-Mozzarella & Ricotta</span> $5.25 - $8.99</p>
+                <p><span class="menuItem">Strombolli-Pepperoni & Mozzarella</span> $5.25 - $8.99</p>
+                <p><span class="menuItem">Chicken Roll</span> $6.25 - $9.99</p>
+                <p><span class="menuItem">Spinach Roll</span> $6.25 - $9.99</p>
+            </div>
+        </div>
+
+        <div class="table-wrapper" id="others">
+            <h1>Others</h1>
+            <div id="others_table" class="menu-option">
+                <p><span class="menuItem">Beef or Chicken Gyro</span> $4.99</p>
+                <p><span class="menuItem">Chicken Quesadilla</span> $5.99</p>
+            </div>
+        </div>
+
+        <div class="image-wrapper" id="image-wrapper-calzone"></div>
+
+    </div> <!-- end calzone table -->
+
+</div> <!--end table wrapper-->
+
+    <div id="back-to-top-container">
+        <div id="back-to-top" onclick="resetScroller('bxslider'); return false;"><img src="images/up-arrow.png"/><p>TOP</p></div>
+    </div>
+
+    <div id="footer">
+        <p id="copyright">REYE'S PIZZA <span>&copy;2015</span></p>
+        <table id="c_cards" cellpadding="0">
+            <tr >
+                <td><img class="cc_images" src="images/visa.png" alt=""/></td>
+                <td><img class="cc_images" src="images/mastercard.png"  alt=""/></td>
+                <td><img class="cc_images" src="images/discover.png" alt=""/></td>
+            </tr>
+        </table>
+    </div>
+
+</div>
+
+</body>
+
+</html>
+

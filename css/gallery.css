@@ -1,0 +1,17 @@
+div#main_body {
+    height:500px;
+}
+
+
+
+/*iphone*/
+/*
+@media screen and (max-width: 640px)
+{
+
+img.navIconright, img.navIconleft {width:25px;
+height:25px;
+margin-top:122px}
+
+
+}*/
